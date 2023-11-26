@@ -1,0 +1,324 @@
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    overflow-y: auto;
+}
+
+.planner {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ffffff;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+}
+
+
+
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+header {
+    background-color: #8e8e8f;
+    width: 98%;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+    border-radius: 10px; /* Додаємо заокруглені рамки для header */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 1%;
+}
+
+h1 {
+    font-size: 5em;
+    margin: 0;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info p, .info hr, .info .checkbox {
+    margin: 10px;
+    display: flex;
+}
+
+.top-section-hr {
+    width: 50%;
+    margin: 10px 0;
+}
+
+.title-block {
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 60%;
+}
+
+.title-block p {
+    color: #ffffff;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title-block-cb2{
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.top-section-cb {
+    display: flex;
+
+}
+
+.title-block-cb{
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.top-section-p{
+    text-align: left;
+}
+
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox label {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #333;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.checkbox input[type="checkbox"]:checked + label::before {
+    content: '\2713';
+    font-size: 16px;
+    color: #333;
+}
+
+.top-section {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-gap: 20px;
+    width: 97%;
+    margin: 0 auto;
+    max-height: 85%;
+    padding-right: 1%;
+}
+
+
+.left-block, .center-block, .right-block {
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.right-part {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.day-block {
+    border: 1px solid #333;
+    padding: 10px;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.weekend-day {
+    grid-column: span 1;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    border-radius: 10px;
+}
+
+.checkbox__item {
+    display: flex;
+    margin-top: 7px;
+    flex-direction: column;
+}
+
+.group {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.group-head{
+    margin-left: 10px;
+}
+
+input {
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:270px;
+    border:none;
+    border-bottom:1px solid #757575;
+    opacity: 0.5;
+  }
+  input:focus     { outline:none; }
+  
+  /* active state */
+  input:focus ~ label, input:valid ~ label     {
+    top:20px;
+    font-size:14px;
+    color:#5264AE;
+}
+
+.bar   { position:relative; display:block; width:285px; }
+.bar:before, .bar:after   {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  height:60%; 
+  width:10px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+.input1 {
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:150px;
+    border:none;
+    border-bottom:1px solid #757575;
+    opacity: 0.5;
+  }
+  .input1:focus     { outline:none; }
+
+.bar1   { position:relative; display:block; width:165px; }
+.bar1:before, .bar1:after   {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar1:before {
+  left:50%;
+}
+.bar1:after {
+  right:50%; 
+}
+
+/* active state */
+.input1:focus ~ .bar1:before, .input1:focus ~ .bar1:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight1 {
+  height:60%; 
+  width:10px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0;
+}
+
+/* active state */
+.input1:focus ~ .highlight1 {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+.section-ch-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+p{
+    align-content: center;
+}
+
+.custom-textarea {
+    position: relative;
+    top: 30%;
+    left: 10%;
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: none; /* Видаляємо рамку */
+    border-radius: 5px;
+    resize: none;
+    outline: none; /* Видаляємо обводку при фокусі */
+}

@@ -1,0 +1,44 @@
+/* Стилізація заголовка */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Стилізація контейнера форми */
+.registration-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Стилізація текстових полів та кнопки */
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 94.5%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+  outline: none;
+  border-color: #007BFF;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background: #007BFF;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Стилізація посилання на умови використання */
+.terms-link {
+  text-align: center;
+}
