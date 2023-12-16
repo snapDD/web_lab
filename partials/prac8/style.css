@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;700&display=swap');
+
+body, html {
+    font-family: 'Heebo', sans-serif;
+    margin: 0;
+}
+
+/* header block */
+
+.header__container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 7%;
+    margin-top: 30px;
+}
+
+.nav__link {
+    text-decoration: none;
+    padding-left: 30px;
+    color: #000;
+    opacity: 0.95;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.nav__link:first-child {
+    padding-left: 0;
+}
+
+/* about block */
+
+.home__container {
+    max-width: 74%;
+}
+
+.about__block {
+    padding-top: 140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-info__block {
+    max-width: 497px;
+}
+
+.title-greet {
+    font-size: 44px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.additional-info {
+    font-size: 16px;
+    font-weight: 400;
+    color: #21243D;
+    line-height: 2rem;
+}
+
+.download-btn {
+   margin-top: 38px; 
+   width: 208px;
+   height: 47px;
+   background-color: #FF6464;
+   border-radius: 30px;
+   transition: 0.1s ease-in-out;
+}
+.download-resume {
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    opacity: 0.9;
+    padding-top: 8px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.download-btn:hover {
+    background-color: #FF6464;
+    border-radius: 10px;
+}
+
+.download-btn:hover::after {
+    transition: 0.1s ease-in-out;
+}
+
+/* resent posts block */
+
+.wrapper {
+    background-color: #EDF7FA;
+    width: 1;
+    margin-top: 71px;
+}
+
+.resent-posts__block {
+    padding-bottom: 32px;
+    margin: auto;
+    max-width: 65%;
+}
+
+.resents-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.resents-nav__el {
+    margin-left: 7.1%;
+    font-size: 22px;
+    font-weight: 400;
+    color: #21243D;
+}
+
+.resents-nav__view-all {
+    margin-right: 7.1%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #00A8CC;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-around;
+}
+
+.resent-article {
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 36%;
+    max-height: 73%;
+}
+
+.article-title {
+    padding: 24px 0 0 23px;
+    margin: 0;
+    max-width: 89%;
+    font-size: 26px;
+    font-weight: 700;
+    color: #21243D;
+}
+
+.article-info{
+    padding: 20px 0 0 23px;
+    display: flex;
+}
+
+.article-date {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    color: #21243D;
+}
+
+.article-date::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 130%; 
+    border-left: 1px solid #ccc; 
+}
+
+.article-name {
+    font-size: 16px;
+    font-weight: 400;
+    color: #21243D;
+    margin-left: 58px;
+}
+
+.article-suptitle {
+    margin-top: 11px;
+    padding: 0 0 30px 23px;
+    max-width: 89%;
+}
+
+.suptitle-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #21243D;
+}
+
+/* featured block */
+
+.featured__block {
+    padding-top: 25px;
+    margin: auto;
+    max-width: 65%;
+}
+
+.featured__text {
+    margin-left: 7.1%;
+    font-size: 22px;
+    font-weight: normal;
+    color: #21243D;
+}
+
+.featured-example:first-child {
+    padding-top: 25px;
+}
+
+.featured-example {
+    position: relative;
+    display: flex;
+    padding-top: 65px;
+    margin-left: 7.1%;
+}
+
+.featured-example::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    border-top: 1.5px solid #ccc; 
+    margin-top: 200px; 
+}
+
+
+.examle-img {
+    max-width: 100%;
+}
+
+.example-info {
+    margin-left: 30px;
+    margin-top: -3%;
+}
+
+.example-title {
+    padding-top: 26px;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #21243D;
+}
+
+.year-type {
+    display: flex;
+}
+
+.year-text {
+    color: #fff;
+    padding: 7px 10px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #142850;
+    border-radius: 20px;
+}
+
+.type-text {
+    font-size: 20px;
+    font-weight: 400;
+    color: #8695A4;
+    padding-top: 5px;
+    margin-left: 26px;
+}
+
+.example-suptitle {
+    margin-top: 17px;
+}
+
+.examle-text {
+    font-size: 16px;
+    font-weight: normal;
+    color: #21243D;
+}
+
+/* footer */
+
+.footer {
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container {
+    max-width: 65%;
+}
+
+.socials:first-child {
+    padding-left: 0;
+}
+
+.socials {
+    padding-left: 40px;
+}
+
+
+
+.footer-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #21243D;
+}

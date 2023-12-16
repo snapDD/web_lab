@@ -1,0 +1,212 @@
+.page__container {
+    max-width: 90%;
+    margin: 20px 20px 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+/* left part */
+
+.left__part {
+    width: 15%;
+    font-size: 1.1rem;
+}
+
+/* logo part */
+
+.logo__part {
+    display: flex;
+}
+
+.logo__burger {
+    max-width: 24px;
+}
+
+.logo__yt {
+    max-width: 97px;
+    flex: 1;
+    margin-left: 7%;
+}
+
+
+/* nav part */
+
+.nav__part {
+    position: relative;
+    margin-top: 35px;
+}
+
+.nav-panel {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.nav-text {
+    padding-top: 3px;
+    margin-left: 8%;
+}
+
+.nav-icons {
+    max-width: 24px;
+}
+
+.nav__part::after {
+    content: '';
+    position: absolute;
+    top: 120%;
+    left: -10px;
+    width: 85%;
+    height: 1px; 
+    background-color: #ccc; 
+}
+
+
+/* About part */
+
+.about__part {
+    margin-top: 20%;
+    position: relative;
+}
+
+.you-btn {
+    max-width: 16px;
+    padding-top: 2px;
+    margin-left: 3%;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.about__part::after {
+    content: '';
+    position: absolute;
+    top: 110%;
+    left: -10px;
+    width: 85%;
+    height: 1px; 
+    background-color: #ccc; 
+}
+
+/* Subs part */
+
+.subs__part {
+    margin-top: 20%;
+    position: relative;
+}
+
+/* right part */
+
+.right__part {
+    max-width: 85%;
+    position: relative;
+}
+
+/* search part */
+
+.search__part {
+    margin-left: 30%;
+    display: flex;
+    position: relative;
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+}
+
+.search-input {
+    padding: 10px;
+    border-radius: 20px;
+    width: 600px;
+    outline: none;
+    opacity: 0.6;
+}
+
+.voice-search {
+    margin-left: 5%;
+    max-width: 40px;
+    opacity: 0.5;
+}
+
+.interract-btn {
+    width: 24px;
+    margin-right: 30px;
+}
+
+.interract-menu {
+    margin-left: 35%;
+    display: flex;
+    max-width: 170px;
+}
+
+#img {
+    border-radius: 50%;
+}
+
+/* recommended part */
+
+.recommended__part {
+    display: flex;
+}
+
+.recommended-item {
+    padding: 5px 15px;
+    text-align: center;
+    font-weight: 700;
+    background-color: rgb(230, 226, 226);
+    border-radius: 10px;
+    max-width: 55%;
+    margin-right: 10px;
+}
+
+.recommended-item:last-child {
+    margin-right: 0;
+}
+
+/* videocards part */
+
+.videocards__part {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.vide0-card {
+    max-width: 20%;
+    margin-left: 50px;
+}
+
+.short-description {
+    display: flex;
+    margin-top: 5px;
+}
+
+.video-image{
+    width: 350px;
+    border-radius: 10%;
+}
+
+#img-channel {
+    border-radius: 50%;
+    max-width: 36px;
+    margin-left: 5px;
+}
+
+.video-text {
+    margin-left: 20px;
+    margin-top: -12px;
+}
+
+.video-name {
+    font-weight: 700;
+}
+
+.channel-name {
+    margin-top: -7px;
+}
+
+.video-info {
+    margin-top: -5px;
+}
